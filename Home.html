@@ -1,0 +1,19 @@
+<div class="wikidoc">
+<p><strong>Windows Phone 7.1 Storage Helper Assembly</strong><br>
+<a href="http://temporalwars.com/CodeHelpers/WpStorageHelper">http://temporalwars.com/CodeHelpers/WpStorageHelper</a><br>
+<br>
+This WP7.1 StorageHelper assembly is used to serialize classes into XML data for save/load operations, saved to WP7.1 store.<br>
+<br>
+This is one of my first WP7.1 assemblies used to help ease development on Windows Phone. I will be adding additional WP7.1 assemblies in the near future.<br>
+<br>
+I use a default namespace string for all helper assemblies, making it easier to organize and locate assemblies within projects. Each helper assembly will be marked with the following default namespace: &quot;BenScharbach.WP7.Helpers&quot;, with the actual namespace's
+ specific name at the end of the default namespace; for example, 'Storage' for this assembly.<br>
+<br>
+The storage assembly helper created from this code check-in uses the IsolatedFileStorage class. This class is contained within WP7.1 SDK. For future WP8 helper assemblies I will use the StorageFile class which only comes with WP8 SDK.<br>
+<br>
+To use these assemblies' Load/Save operations, the consuming class must be properly decorated with Microsoft's serialization attributes. For example, to use the XML load and save methods, the consumed class MUST have the
+<em>DataContract</em> and <em>DataMember</em> attributes applied. Using these attributes on the consumed class gives you the ability to control which properties are serializable for the load and save operations.<br>
+<br>
+Thanks,<br>
+Ben Scharbach</p>
+</div><div class="ClearBoth"></div>
